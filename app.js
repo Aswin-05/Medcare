@@ -174,7 +174,7 @@ app.post("/newsletter", urlencodedParser, [
     })
         .then(function () {
             if (res.statusCode === 200) {
-                req.flash("newsletterResult", "Delivered..");
+                req.flash("newsletterResult", "Subscribed..");
                 res.redirect("/#newsletter");
                 console.log("success");
             } else {
