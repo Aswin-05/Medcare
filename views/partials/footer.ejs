@@ -43,7 +43,7 @@
           <div id="newsletter" class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <form action="/newsletter" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email" style="outline: none;"><input type="submit" value="Subscribe">
             </form>
             <% if( typeof newsletterAlert != "undefined") { %> <% newsletterAlert.forEach(function(error) { %>
               <div
